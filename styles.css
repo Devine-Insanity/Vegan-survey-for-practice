@@ -1,0 +1,84 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  font-size: 1.5rem;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  background-image: linear-gradient(
+      115deg,
+      rgba(2, 2, 2, 0.5),
+      rgba(2, 2, 2, 0.5)
+    ),
+    url(./Images/shutterstock_413417941-1440x956.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body::after {
+  content: "";
+  transform: translate(50%);
+  z-index: 1;
+  background: rgba(54, 133, 74, 0.267);
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+header p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+#submit {
+  font-size: 2rem;
+  color: white;
+  background: rgb(31, 93, 31);
+  border: 2px solid rgb(22, 42, 22);
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+#submit:hover {
+  font-size: 2.2rem;
+  color: green;
+  background: rgb(80, 199, 59);
+}
+#comments {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+#name,
+#email,
+#age {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+.comments,
+.vegan-qst,
+.email,
+.age {
+  padding-top: 2rem;
+}
+.btn {
+  padding-top: 0.5rem;
+}

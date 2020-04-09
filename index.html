@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Are you vegan?</h1>
+      <p>please complete the bellow for if you are interested in veganism</p>
+    </header>
+    <form action="">
+      <div class="name">
+        <label id="name" for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="name"
+          required
+        />
+      </div>
+      <div class="email">
+        <label id="email" for="email">Email</label>
+        <br />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+      </div>
+      <div class="age">
+        <label id="age" for="age">Age <span>(optional)</span></label>
+        <br />
+        <input
+          type="number"
+          name="age"
+          placeholder="Age"
+          id="age"
+          min="10"
+          max="99"
+        />
+      </div>
+      <div class="vegan-qst">
+        <div class="vegan">
+          <p>Are you interested in veganism?</p>
+          <label for="">
+            <input type="radio" name="user-vegan" id="input-radio" checked />
+            Yes
+          </label>
+        </div>
+        <div class="vegan">
+          <label for="">
+            <input type="radio" name="user-vegan" id="input-radio" /> No
+          </label>
+        </div>
+        <div class="vegan">
+          <label for="">
+            <input type="radio" name="user-vegan" id="input-radio" /> I need
+            more information
+          </label>
+        </div>
+      </div>
+
+      <div class="comments">
+        <p>Would you like to know more?</p>
+        <textarea
+          name="comment"
+          id="comments"
+          cols=""
+          rows=""
+          class="input-textarea"
+          placeholder="What would you like to know?"
+        ></textarea>
+      </div>
+      <div class="btn submit-btn">
+        <button type="button" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
